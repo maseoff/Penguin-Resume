@@ -1,0 +1,58 @@
+center {
+    font-family: Impact;
+    font-size: 40px;
+}
+
+hr {
+    background-color: black;
+    height: 2px;
+}
+
+.contact__info {
+    height: 400px;
+    width: 500px;
+
+    margin-top: 70px;
+    margin-left: 100px;
+}
+
+.contact__info .contact img {
+    height: 32px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.contact__info .contact p {
+    font-family: Tahoma;
+    font-size: 25px;
+}
+
+.contact__info .avatar {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 400px;
+}
+
+.contact__info .avatar img {
+    height: 400px;
+    width: 330px;
+
+    border: 3px solid black;
+    border-radius: 30px;
+}
+
+.description {
+    padding-bottom: 100px;
+}
+
+.description center {
+    padding-top: 100px;
+}
+
+.description p {
+    font-family: Tahoma;
+    font-size: 25px;
+
+    padding-left: 80px;
+    width: 80vw;
+}

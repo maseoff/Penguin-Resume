@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link href="static/css/auth.css" rel="stylesheet">
+
+<div class="auth">
+    <h1 class="auth__h1">
+        Your Account
+    </h1>
+    <!-- h1 class="auth__h1" -->
+    
+    <form action="/auth" method="post">
+        <label for="username">
+            Username
+        </label>
+        <input id="username" name="username" type="text" placeholder="penguin">
+    
+        <label for="password">
+            Password
+        </label>
+        <input id="password" name="password" type="password" placeholder="">
+    
+        <input type="submit" value="Submit">
+    </form>
+
+    {% if error %}
+    <div class="error">
+        {{ error }}
+    </div>
+    {% endif %}
+
+    <p class="auth__p">
+        Are you new? <a href="/signup">Create an account!</a>
+    </p>
+    <!-- p class="auth__p" -->
+</div>
+<!-- div class="auth" -->
+
+{% endblock %}

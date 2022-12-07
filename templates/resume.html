@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <link href={{ url_for("static", filename="css/resume.css", _external=True) }} rel="stylesheet">
+    <body>
+        <center>
+            {{ " ".join([name, surname]) }}
+        </center>
+        <hr>
+
+        <div class="contact__info">
+            <div class="avatar">
+                <p>
+                    <img src="data:;base64,{{ encoded_avatar.decode() }}">
+                </p>
+            </div>
+            <!-- div class="avatar" -->
+
+            <div class="contact">
+                <p>
+                    <img src={{ url_for("static", filename="images/icons/email.png", _external=True) }}>
+                    {{ email }}
+                </p>
+            </div>
+
+            <div class="contact">
+                <p>
+                    <img src={{ url_for("static", filename="images/icons/phone.png", _external=True) }}>
+                    {{ phone }}
+                </p>
+            </div>
+
+            {% if vk %}
+            <div class="contact">
+                <p>
+                    <img src={{ url_for("static", filename="images/icons/vk.png", _external=True) }}>
+                    {{ vk }}
+                </p>
+            </div>
+            {% endif %}
+
+            {% if github %}
+            <div class="contact">
+                <p>
+                    <img src={{ url_for("static", filename="images/icons/github.png", _external=True) }}>
+                    {{ github }}
+                </p>
+            </div>
+            {% endif %}
+
+            {% if telegram %}
+            <div class="contact">
+                <p>
+                    <img src={{ url_for("static", filename="images/icons/telegram.png", _external=True) }}>
+                    {{ telegram }}
+                </p>
+            </div>
+            {% endif %}
+        </div>
+        <!-- div class="content" -->
+        
+        <div class="description">
+            {% if work_experience %}
+            <center>
+                Work Experience
+            </center>
+            <hr>
+
+            {% for info in work_experience.split("\n") %}
+                <p>
+                    {{ info }}
+                </p>
+                {% endfor %}
+            {% endif %}
+
+            {% if skills %}
+                <center>
+                    Skills
+                </center>
+                <hr>
+
+                {% for info in skills.split("\n") %}
+                <p>
+                    {{ info }}
+                </p>
+                {% endfor %}
+            {% endif %}
+
+            {% if hobby %}
+                <center>
+                    Hobby
+                </center>
+                <hr>
+
+                {% for info in hobby.split("\n") %}
+                <p>
+                    {{ info }}
+                </p>
+                {% endfor %}
+            {% endif %}
+        </div>
+        <!-- div class="description" -->
+    </body>
+</html>

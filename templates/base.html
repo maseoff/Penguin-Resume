@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Penguin Resume&trade; - {{ title }}
+        </title>
+
+        <link href="static/images/icons/logo.png" rel="icon">
+        <link href="static/css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header">
+            <a class="header__a" href="/">
+                <img class="header__a__img" title="Penguin Resume&trade;" alt="Penguin Resume&trade;" src="static/images/icons/logo.png">
+                <!-- img class="header__a__img" -->
+            </a>
+            <!-- a class="header__a" -->
+
+            <ul class="header__ul">
+                <li class="header__ul__li">
+                    <a class="header__ul__li__a" href="/create">
+                        <button class="header__ul__li__a__button">
+                            Create
+                        </button>
+                        <!-- button class="header__ul__li__a__button" -->
+                    </a>
+                    <!-- a class="header__ul__li__a" -->
+                </li>
+                <!-- li class="header__ul__li" -->
+
+                <li class="header__ul__li">
+                    <a class="header__ul__li__a" href="/fun">
+                        <button class="header__ul__li__a__button">
+                            Fun
+                        </button>
+                        <!-- button class="header__ul__li__a__button" -->
+                    </a>
+                    <!-- a class="header__ul__li__a" -->
+                </li>
+                <!-- li class="header__ul__li" -->
+
+                <li class="header__ul__li">
+                    <a class="header__ul__li__a" href="/">
+                        <button class="header__ul__li__a__button">
+                            Home
+                        </button>
+                        <!-- button class="header__ul__li__a__button" -->
+                    </a>
+                    <!-- a class="header__ul__li__a" -->
+                </li>
+                <!-- li class="header__ul__li" -->
+            </ul>
+            <!-- ul class="header__ul" -->
+
+            <ul class="header__ul">
+                <li class="header__ul__li">
+                    {% if not is_authed %}
+
+                    <a class="header__ul__li__a" href="/auth">
+                        <button class="header__ul__li__a__button">
+                            Auth
+                        </button>
+                        <!-- button class="header__ul__li__a__button" -->
+                    </a>
+                    <!-- a class="header__ul__li__a" -->
+
+                    {% else %}
+
+                    <a class="header__ul__li__a" href="/logout">
+                        <button class="header__ul__li__a__button">
+                            Log Out
+                        </button>
+                        <!-- button class="header__ul__li__a__button" -->
+                    </a>
+                    <!-- a class="header__ul__li__a" -->
+                    
+                    {% endif %}
+                </li>
+                <!-- li class="header__ul__li" -->
+            </ul>
+            <!-- ul class="header__ul" -->
+        </header>
+
+        {% block content %}
+        <!-- ... class="content__..." -->
+        {% endblock %}
+    </body>
+</html>

@@ -1,0 +1,89 @@
+body {
+    background-image: url("./../images/background/auth.jpg");
+    background-size: cover;
+}
+
+.auth {
+    height: auto;
+    width: 29.6vw;
+
+    background-color: whitesmoke;
+    border-radius: 5px;
+
+    transform: translate(37vw, 8vh);
+    font-family: sans-serif;
+}
+
+.auth__h1 {
+    padding-top: 3.3vh;
+    text-align: center;
+
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+form {
+    width: 22vw;
+    margin-left: 2.93vw;
+    text-align: center;
+}
+
+label {
+    display: flex;
+    margin-top: 3vh;
+
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+input {
+    width: 22.6vw;
+    padding: 0.73vw;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+input[type="submit"] {
+    width: 24.2vw;
+    height: 6vh;
+
+    color: whitesmoke;
+    background-color: #DEC26B;
+
+    margin-top: 3.5vh;
+    text-align: center;
+
+    font-size: 3.2vh;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.error {
+    height: 4vh;
+    width: 24vw;
+
+    text-align: center;
+    padding-top: 1.5vh;
+
+    margin-top: 2vh;
+    margin-left: 3vw;
+
+    border: 1px solid gray;
+    border-radius: 15px;
+
+    font-size: large;
+    font-weight: bolder;
+
+    background-color: rgb(224, 118, 118);
+}
+
+.auth__p {
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 2vh;
+
+    font-size: 2.4vh;
+    font-weight: 300;   
+}

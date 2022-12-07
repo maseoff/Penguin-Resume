@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link href="static/css/home.css" rel="stylesheet">
+
+<div class="hub">
+    <div class="hub__left">
+        <h1 class="hub__left__h1">
+            Penguin Resume
+        </h1>
+        <!-- h1 class="hub__left__h1" -->
+
+        <p class="hub__left__p">
+            Create a resume with your cute friends - penguins! All you need - just to sign up &#128039;
+        </p>
+        <!-- p class="hub__left__p" -->
+
+        <button class="hub__left__button">
+            <a class="hub__left__button__a" href="/create">
+                Create!
+            </a>
+        </button>
+        <!-- button class="hub__left__button" -->
+    </div>
+    <!-- div class="hub__left" -->
+
+    <div class="hub__right">
+        <img class="hub__right__image image__1" src="./../static/images/other/1.jpg" alt="Penguin 1" title="Penguin 1">
+        <!-- img class="hub__right__image" -->
+
+        <img class="hub__right__image image__2" src="./../static/images/other/2.jpg" alt="Penguin 2" title="Penguin 2">
+        <!-- img class="hub__right__image" -->
+    </div>
+    <!-- div class="hub__right" -->
+</div>
+<!-- div class="hub" -->
+
+{% endblock %}

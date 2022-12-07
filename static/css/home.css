@@ -1,0 +1,86 @@
+body {
+    background-image: url("./../images/background/hub.jpg");
+    background-size: cover;
+}
+
+.hub {
+    display: flex;
+}
+
+.hub__left {
+    height: 50vh;
+    width: 28vw;
+
+    background-color: #f0ecbd;
+    border-radius: 55px;
+
+    align-items: center;
+    display: block;
+
+    margin-top: 12vh;
+    margin-left: 13vw;
+}
+
+.hub__left__h1 {
+    color: #252075;
+    font-size: 6vh;
+
+    padding-top: 3vh;
+    padding-left: 3vw;
+}
+
+.hub__left__p {
+    color: #252075;
+    font-size: 2.5vh;
+    font-weight: bolder;
+
+    width: 25vw;
+    padding-top: 2vh;
+    padding-left: 2.3vw;
+}
+
+.hub__left__button {
+    background-color: #DEC26B;
+    border: none;
+    border-radius: 100px;
+
+    height: 13.5vh;
+    width: 18vw;
+
+    font-size: 5.5vh;
+    font-weight: bolder;
+
+    margin-top: 5vh;
+    margin-left: 5vw;
+    transition: all 0.2s ease-out;
+}
+
+.hub__left__button:hover {
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+.hub__left__button__a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.hub__right__image {
+    height: 32vh;
+    width: 27vw;
+
+    border-radius: 100px;
+    border: 3px solid whitesmoke;
+
+    float: right;
+}
+
+.image__1 {
+    margin-top: 2vh;
+    margin-left: -18vw;
+}
+
+.image__2 {
+    margin-top: 40vh;
+    margin-left: 7vw;
+}

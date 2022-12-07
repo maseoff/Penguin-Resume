@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link href="static/css/fun.css" rel="stylesheet">
+
+<div class="fun">
+    <div class="fun__wrapper">
+        <h2 class="fun__wrapper__h2">
+            Сегодня ты...
+        </h2>
+        <!-- h2 class="fun__h2" -->
+    
+        <h1 class="fun__wrapper__h1">
+            <b><i>{{ image_name }}</i></b>
+        </h1>
+        <!-- h1 class="fun__h1" -->
+    
+        <img class="fun__wrapper__img" src={{ image_url }} alt={{ image_name }} title="Сегодня ты...">
+        <!-- img class="fun__img" -->
+    </div>
+    <!-- div class="fun__wrapper" -->
+</div>
+<!-- div class="fun" -->
+
+{% endblock %}

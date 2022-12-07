@@ -1,0 +1,99 @@
+.create__wrapper {
+    height: auto;
+    width: 70vw;
+
+    background-color: #fdf0c9;
+    border-radius: 100px;
+    
+    display: flex;
+    transform: translate(15vw, 2vh);
+}
+
+form {
+    margin-left: 9vw;
+    width: 66vw;
+}
+
+label {
+    display: flex;
+    margin-top: 3vh;
+
+    color: #252075;
+    font-family: sans-serif;
+
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+input {
+    width: 50vw;
+    padding: 1vw;
+
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+textarea {
+    height: 3.5vh;
+    min-height: 3.5vh;
+
+    width: 50vw;
+    max-width: 50vw;
+    padding: 1vw;
+}
+
+input[type="file"] {
+    height: 10vh;
+    width: 20vw;
+    
+    color: black;
+    background-color: whitesmoke;
+    
+    border: 3px solid;
+    border-color: gray;
+
+    margin-left: 16vw;
+    cursor: pointer;
+}
+
+
+input[type="submit"] {
+    width: 24.2vw;
+    height: 6vh;
+
+    color: whitesmoke;
+    background-color: #DEC26B;
+
+    margin-top: 3.5vh;
+    margin-bottom: 5vh;
+    margin-left: 1vw;
+    text-align: center;
+
+    font-size: 3.2vh;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.error {
+    height: 4vh;
+    width: 24vw;
+
+    text-align: center;
+    padding-top: 1.5vh;
+
+    margin-bottom: 2vh;
+    margin-left: 14vw;
+
+    border: 1px solid gray;
+    border-radius: 15px;
+
+    font-size: 2.5vh;
+    font-weight: bolder;
+
+    background-color: rgb(224, 118, 118);
+}

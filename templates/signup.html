@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link href="static/css/signup.css" rel="stylesheet">
+
+<div class="signup">
+    <h1 class="signup__h1">
+        Create Your Account
+    </h1>
+    <!-- h1 class="signup__h1" -->
+    
+    <form action="/signup" method="post">
+        <label for="username">
+            Enter Username
+        </label>
+        <input id="username" name="username" type="text" placeholder="penguin">
+    
+        <label for="password">
+            Enter Password
+        </label>
+        <input id="password" name="password" type="text" placeholder="P3ngU1n">
+
+        <label for="repeated_password">
+            Repeat Password
+        </label>
+        <input id="repeated_password" name="repeated_password" type="text" placeholder="P3ngU1n">
+
+        <label for="love_for_penguins">
+            Your love for cute penguins &#128039;
+        </label>
+        <input id="love_for_penguins" name="love_for_penguins" type="range"min="0" max="10" value="0">
+    
+        <input type="submit" value="Sign Up">
+    </form>
+
+    {% if error %}
+    <div class="error">
+        {{ error }}
+    </div>
+    {% endif %}
+</div>
+<!-- div class="signup" -->
+
+{% endblock %}
